@@ -1,0 +1,27 @@
+[project]
+name = "study-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "MOON-HILL\\tsuki", email = "tsukioka.business@gmail.com" }
+]
+dependencies = [
+    "mcp[cli]>=1.19.0",
+    "openai-agents>=0.4.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/study_mcp_server"]
