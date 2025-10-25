@@ -6,8 +6,15 @@ authors = [
     { name = "MOON-HILL\\tsuki", email = "tsukioka.business@gmail.com" }
 ]
 dependencies = [
-    "mcp[cli]>=1.19.0",
-    "openai-agents>=0.4.1",
+    "fastapi>=0.120.0",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.1.1",
+    "openai>=2.6.1",
+    "pygithub>=2.8.1",
+    "mcp>=1.19.0",
+    "gradio>=5.49.1",
+    "anthropic>=0.71.0",
+    "ruff>=0.14.2",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -25,3 +32,7 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/study_mcp_server"]
+
+[tool.poetry.dependencies]
+pydantic = ">=2.0,<2.12"
+gradio = "5.49.1"
